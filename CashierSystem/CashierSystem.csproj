@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C75D871F-6437-4A0F-A0AF-0349E0AAEEFB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CashierSystem</RootNamespace>
+    <AssemblyName>CashierSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataManager.cs" />
+    <Compile Include="Frm_InitData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_InitData.Designer.cs">
+      <DependentUpon>Frm_InitData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_InitDataStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_InitDataStatus.Designer.cs">
+      <DependentUpon>Frm_InitDataStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Main.Designer.cs">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_About.Designer.cs">
+      <DependentUpon>Frm_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_GoodsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_GoodsInfo.Designer.cs">
+      <DependentUpon>Frm_GoodsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_NoReceiveMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_NoReceiveMoney.Designer.cs">
+      <DependentUpon>Frm_NoReceiveMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_OrderInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_OrderInfo.Designer.cs">
+      <DependentUpon>Frm_OrderInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_OrderInfoDIalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_OrderInfoDIalog.Designer.cs">
+      <DependentUpon>Frm_OrderInfoDIalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Payment.Designer.cs">
+      <DependentUpon>Frm_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SortInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SortInfo.Designer.cs">
+      <DependentUpon>Frm_SortInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_UnitInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_UnitInfo.Designer.cs">
+      <DependentUpon>Frm_UnitInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_UserInfo.Designer.cs">
+      <DependentUpon>Frm_UserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_WholeSalerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_WholeSalerInfo.Designer.cs">
+      <DependentUpon>Frm_WholeSalerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InitGoodsData.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Frm_WeatherSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_WeatherSetting.Designer.cs">
+      <DependentUpon>Frm_WeatherSetting.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Frm_InitData.resx">
+      <DependentUpon>Frm_InitData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_InitDataStatus.resx">
+      <DependentUpon>Frm_InitDataStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Main.resx">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_About.resx">
+      <DependentUpon>Frm_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_GoodsInfo.resx">
+      <DependentUpon>Frm_GoodsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_NoReceiveMoney.resx">
+      <DependentUpon>Frm_NoReceiveMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_OrderInfo.resx">
+      <DependentUpon>Frm_OrderInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_OrderInfoDIalog.resx">
+      <DependentUpon>Frm_OrderInfoDIalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Payment.resx">
+      <DependentUpon>Frm_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SortInfo.resx">
+      <DependentUpon>Frm_SortInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_UnitInfo.resx">
+      <DependentUpon>Frm_UnitInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_UserInfo.resx">
+      <DependentUpon>Frm_UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_WholeSalerInfo.resx">
+      <DependentUpon>Frm_WholeSalerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Frm_WeatherSetting.resx">
+      <DependentUpon>Frm_WeatherSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bll\Bll.csproj">
+      <Project>{b94443df-cba5-4e66-9b62-9089bbafe7e0}</Project>
+      <Name>Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{089CBDBE-EF09-46E3-9507-0DC012175EDD}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common_Api\Common_API.csproj">
+      <Project>{9CD9ACDB-1339-462B-A736-95A7E92F6799}</Project>
+      <Name>Common_API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common_Winform\Common_Winform.csproj">
+      <Project>{cbc06bbe-0af3-4957-bda9-1a2165a2eca3}</Project>
+      <Name>Common_Winform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{d468b658-61b0-4012-b4d5-c934d32b73e4}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="image\gif\waitting.gif" />
+    <Content Include="image\icon\back.png" />
+    <Content Include="image\icon\blank.gif" />
+    <Content Include="image\icon\cancel.png" />
+    <Content Include="image\icon\cut.png" />
+    <Content Include="image\icon\edit_add.png" />
+    <Content Include="image\icon\edit_remove.png" />
+    <Content Include="image\icon\filesave.png" />
+    <Content Include="image\icon\help.png" />
+    <Content Include="image\icon\no.png" />
+    <Content Include="image\icon\ok.png" />
+    <Content Include="image\icon\pencil.png" />
+    <Content Include="image\icon\print.png" />
+    <Content Include="image\icon\redo.png" />
+    <Content Include="image\icon\reload.png" />
+    <Content Include="image\icon\search.png" />
+    <Content Include="image\icon\sum.png" />
+    <Content Include="image\icon\tip.png" />
+    <Content Include="image\icon\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="file\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
